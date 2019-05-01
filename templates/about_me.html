@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block title %}antras{% endblock %}
+
+{% block content %}
+antras {{ dabar }}
+
+{% for item in sarasas %}
+item: {{ item }}
+{% endfor %}
+
+{% if sarasas %}
+<p>sarasas egzistuoja</p>
+{% else %}
+<p>saraso nera</p>
+{% endif %}
+{% endblock %}
